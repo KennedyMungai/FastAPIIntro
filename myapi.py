@@ -47,3 +47,8 @@ def create_student(student_id: int, student: Student):
     
     students[student_id] = student
     return students[student]
+
+
+@app.put("/update_student/{student_id}")
+def update_student(student_id: int. student: Student):
+    pass
