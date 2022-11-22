@@ -42,4 +42,5 @@ def get_student(*, student_id: int, name: Optional[str] = None, test : int):
 
 @app.post("/create-student/{student_id}")
 def create_student(student_id: int, student: Student):
-    pass
+    if student_id in students:
+        return {"Error": "Student Exists"}
