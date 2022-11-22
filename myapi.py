@@ -1,5 +1,7 @@
 from typing import Optional
 from fastapi import FastAPI, Path
+from pydantic import BaseModel
+
 
 app = FastAPI()
 
