@@ -22,9 +22,9 @@ class Student(BaseModel):
 
 
 class UpdateStudent(BaseModel):
-    name: Optional(str)
-    age: Optional(int)
-    year: Optional(str)
+    name: Optional[str] = None
+    age: Optional[int] = None
+    year: Optional[str] = None
 
 
 @app.get("/")
