@@ -15,6 +15,12 @@ students = {
 }
 
 
+class Student(BaseModel):
+    name: str
+    age: int
+    year: str
+
+
 @app.get("/")
 def index():
     return {"name":"First Data"}
