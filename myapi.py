@@ -23,7 +23,7 @@ def get_student(student_id: int = Path(None, description="The ID of the student 
 
 
 @app.get("/get-by-name")
-def get_student(name: str):
+def get_student(name: str = None):
     for student_id in students:
         if students[student_id]["name"] == name:
             return students[student_id]
