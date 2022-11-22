@@ -38,3 +38,8 @@ def get_student(*, student_id: int, name: Optional[str] = None, test : int):
             return students[student_id]
         
         return {"Data": "Not found"}
+    
+
+@app.post("/create-student/{student_id}")
+def create_student(student_id: int, student: Student):
+    pass
