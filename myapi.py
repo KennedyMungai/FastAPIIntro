@@ -46,3 +46,4 @@ def create_student(student_id: int, student: Student):
         return {"Error": "Student Exists"}
     
     students[student_id] = student
+    return students[student]
