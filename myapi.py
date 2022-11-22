@@ -21,6 +21,12 @@ class Student(BaseModel):
     year: str
 
 
+class UpdateStudent(BaseModel):
+    name: Optional(str)
+    age: Optional(int)
+    year: Optional(str)
+
+
 @app.get("/")
 def index():
     return {"name":"First Data"}
